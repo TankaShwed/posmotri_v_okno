@@ -53,10 +53,13 @@ ol {
 /*left section*/
 .result {
   min-width: 711px; /*или flex-basis?*/
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .result__video-container {
-  padding-bottom: 16px;
+  position: relative;
 }
 
 .result__video {
@@ -104,6 +107,7 @@ ol {
 .content__list {
   height: 298px;
   overflow: scroll;
+  position: relative;
 }
 
 /*templates*/
@@ -146,4 +150,7 @@ ol {
 .content__video-card-thumbnail {
   flex: 50%;
   height: 100%;
+}
+
+.preloader {
 }
