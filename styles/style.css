@@ -16,6 +16,9 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -41,11 +44,10 @@ ol {
 .content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: flex-end;
   gap: 30px;
-  padding: 0 30px;
-  min-height: 534px; /*бесполезен?*/
+  /*padding: 0 30px;
+  min-height: 534px; бесполезн?*/
 }
 
 /*left section*/
@@ -54,20 +56,26 @@ ol {
 }
 
 .result__video-container {
- 
+  padding-bottom: 16px;
 }
 
 .result__video {
- width: 100%;
+  min-width: 100%;
 }
 
 .search-form {
   display: flex;
-  flex-direction: row;
-  gap: 40px;
-  margin-top: 16px;
+  justify-content: space-between;
   align-items: flex-start;
-  justify-content: flex-start;
+}
+
+.search-form__fieldset-title {
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 5px;
 }
 
 /*right section*/
@@ -79,17 +87,63 @@ ol {
   gap: 26px;
 }
 
-/*
 .title {
-  font-family: Oswald;
+  font-family: "Oswald";
   font-size: 75px;
   font-weight: 700;
   line-height: 94%;
   text-transform: uppercase;
-}*/
+  /*padding-bottom: 26px;*/
+}
+
+.content__accent {
+  background-color: rgba(0, 0, 0, 0.6);
+}
 
 /*список карточек темплейтов*/
 .content__list {
   height: 298px;
   overflow: scroll;
+}
+
+/*templates*/
+.content__list-item {
+  padding-bottom: 30px;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 103px;
+  padding: 2px;
+}
+
+.content__video-card-description-container {
+  flex: 51%;
+  height: 100%;
+}
+
+.content__video-card-title {
+  font-family: "Oswald";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 30px */
+  text-transform: uppercase;
+  padding-bottom: 6px;
+}
+
+.content__video-card-description {
+  line-height: 90%; /* 16.2px */
+}
+
+.content__video-card-thumbnail {
+  flex: 50%;
+  height: 100%;
 }
