@@ -40,14 +40,25 @@ ol {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 /*main*/
 .content {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   gap: 30px;
-  /*padding: 0 30px;
-  min-height: 534px; бесполезн?*/
+  padding: 0 30px;
+  width: 100%;
+  /*min-height: 534px; бесполезн?*/
 }
 
 /*left section*/
@@ -72,6 +83,39 @@ ol {
   align-items: flex-start;
 }
 
+.search-form__textfield {
+  cursor: pointer;
+  width: 225px;
+  height: 27px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: none;
+  border-right: none;
+  background-color: #1b1919;
+  padding-left: 0;
+  appearance: none;
+}
+
+.search-form__fieldset {
+  border: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input[type="checkbox"]:checked + span {
+  width: 17px;
+  height: 17px;
+  border: 1px solid transparent;
+  background-color: #fff;
+}
+
 .search-form__fieldset-title {
   font-family: "Fira Sans Condensed";
   font-size: 18px;
@@ -79,6 +123,45 @@ ol {
   font-weight: 400;
   line-height: normal;
   padding-bottom: 5px;
+}
+
+.search-form__pseudo-checkbox,
+.search-form__label-text {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: 1px #fff solid;
+  cursor: pointer;
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.search-form__submit-button {
+  width: 194px;
+}
+
+.search-form:last-child {
+  align-items: flex-end;
 }
 
 /*right section*/
@@ -100,7 +183,7 @@ ol {
 }
 
 .content__accent {
-  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(84, 80, 80, 1);
 }
 
 /*список карточек темплейтов*/
