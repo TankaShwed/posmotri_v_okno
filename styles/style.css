@@ -60,7 +60,6 @@ ol {
   width: 100%;
 }
 
-/*left section*/
 .result {
   min-width: 711px;
 }
@@ -107,7 +106,6 @@ ol {
   align-items: center;
 }
 
-/*input*/
 .search-form__textfield {
   min-width: 225px;
   min-height: 27px;
@@ -125,7 +123,6 @@ ol {
   appearance: none;
 }
 
-/*checkbox*/
 .search-form__checkbox-list {
   display: flex;
   justify-content: space-between;
@@ -145,7 +142,6 @@ ol {
   outline-offset: 1px;
 }
 
-/*.search-form__checkbox:checke/d::after не работает*/
 .search-form__checkbox:checked + .search-form__pseudo-checkbox { 
   background-color: #fff;
 }
@@ -159,7 +155,6 @@ ol {
   outline: 1px solid #fff;
 }
 
-/*button*/
 .button {
   cursor: pointer;
   display: flex;
@@ -193,7 +188,6 @@ ol {
   text-decoration-line: underline;
 }
 
-/*right section*/
 .content__details {
   min-width: 399px;
   display: flex;
@@ -213,14 +207,12 @@ ol {
   color: rgba(84, 80, 80, 1);
 }
 
-/*список карточек темплейтов*/
 .content__list {
   height: 298px;
   overflow-y: scroll;
   position: relative;
 }
 
-/*templates*/
 .content__list-item {
   padding-bottom: 30px;
 }
