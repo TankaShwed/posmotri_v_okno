@@ -218,11 +218,15 @@ ol {
 }
 
 .content__list-item {
-  padding-bottom: 30px;
+  margin-top: 30px;
 }
 
-.content__list-item:last-of-type {
-  padding-bottom: 0px;
+.content__list-item:first-of-type {
+  margin-top: 0px;
+}
+
+.content__list li:last-child {
+  margin-top: 30px;
 }
 
 .content .content__list::-webkit-scrollbar {
