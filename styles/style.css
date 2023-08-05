@@ -142,7 +142,10 @@ ol {
   outline-offset: 1px;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox { 
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after { 
+  content: '';
+  width: 15px;
+  height: 15px;
   background-color: #fff;
 }
 
@@ -183,6 +186,7 @@ ol {
   background-color: rgba(84, 80, 80, 1);
 }
 
+.search-form__label-text:hover, 
 .button:hover,
 .content__card-link:hover {
   text-decoration-line: underline;
@@ -215,6 +219,10 @@ ol {
 
 .content__list-item {
   padding-bottom: 30px;
+}
+
+.content__list-item:last-of-type {
+  padding-bottom: 0px;
 }
 
 .content .content__list::-webkit-scrollbar {
